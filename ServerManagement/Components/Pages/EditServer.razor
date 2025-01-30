@@ -64,7 +64,7 @@
 	[Parameter]
 	public int Id { get; set; }
 
-	[SupplyParameterFromForm]
+	[SupplyParameterFromForm(FormName ="formServer")]
 	private Server? server { get; set; }
 
 	protected override void OnParametersSet()
